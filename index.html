@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Справочник садовода Подмосковья — 990 ₽/год</title>
+<meta name="description" content="Интерактивный справочник 150+ сортов для Подмосковья. Помощник по опылению, агрокалендарь, чеклист. Оценки Госреестра РФ.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f0;color:#1a1a1a}
+.hero{background:linear-gradient(135deg,#1B5E20,#2E7D32,#388E3C);color:#fff;padding:48px 20px 40px;text-align:center}
+.hero h1{font-size:clamp(22px,5vw,36px);font-weight:800;line-height:1.2;margin-bottom:12px}
+.hero p{font-size:16px;opacity:.9;max-width:520px;margin:0 auto 24px;line-height:1.6}
+.price-box{display:inline-block;background:#fff;color:#1B5E20;border-radius:16px;padding:20px 36px;margin-bottom:24px}
+.price-box .price{font-size:42px;font-weight:900;line-height:1}
+.price-box .period{font-size:15px;opacity:.7;margin-top:4px}
+.price-box .old{font-size:13px;text-decoration:line-through;opacity:.5;margin-bottom:4px}
+.cta-btn{display:inline-block;background:#FFD54F;color:#1B3A1B;font-weight:800;font-size:17px;
+  padding:16px 36px;border-radius:12px;text-decoration:none;transition:.2s}
+.cta-btn:hover{background:#FFCA28;transform:translateY(-1px)}
+.sub{font-size:13px;opacity:.7;margin-top:12px}
+.features{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;
+  max-width:900px;margin:40px auto;padding:0 20px}
+.feat{background:#fff;border-radius:12px;padding:20px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.feat-icon{font-size:32px;margin-bottom:10px}
+.feat h3{font-size:15px;font-weight:700;margin-bottom:6px;color:#1B5E20}
+.feat p{font-size:13px;color:#555;line-height:1.6}
+.screenshots{background:#fff;padding:40px 20px;text-align:center}
+.screenshots h2{font-size:22px;font-weight:800;margin-bottom:8px;color:#1B5E20}
+.screenshots p{color:#666;font-size:14px;margin-bottom:24px}
+.screen-grid{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;max-width:700px;margin:0 auto}
+.screen-card{background:#f0f7f0;border-radius:10px;padding:16px 20px;text-align:left;
+  width:200px;font-size:13px;color:#333;border:1.5px solid #c8e6c9}
+.screen-card strong{display:block;font-size:14px;color:#1B5E20;margin-bottom:4px}
+.pricecard{max-width:420px;margin:40px auto;background:#fff;border-radius:20px;
+  box-shadow:0 4px 20px rgba(0,0,0,.12);overflow:hidden}
+.pricecard-head{background:linear-gradient(135deg,#1B5E20,#2E7D32);color:#fff;
+  padding:28px 32px;text-align:center}
+.pricecard-head h2{font-size:20px;font-weight:800;margin-bottom:4px}
+.pricecard-head .p{font-size:40px;font-weight:900;margin:12px 0 4px}
+.pricecard-head .per{font-size:14px;opacity:.8}
+.pricecard-body{padding:24px 32px}
+.pricecard-body ul{list-style:none;font-size:14px;line-height:2}
+.pricecard-body li::before{content:"✅ ";color:#2E7D32}
+.pricecard-btn{display:block;margin:24px 32px;background:#1B5E20;color:#fff;
+  text-align:center;padding:15px;border-radius:10px;font-weight:800;font-size:16px;
+  text-decoration:none}
+.pricecard-note{text-align:center;font-size:12px;color:#888;padding:0 32px 24px}
+.trust{background:#E8F5E9;padding:32px 20px;text-align:center}
+.trust h3{font-size:17px;font-weight:700;color:#1B5E20;margin-bottom:16px}
+.trust-grid{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;max-width:700px;margin:0 auto}
+.trust-item{background:#fff;border-radius:10px;padding:12px 20px;font-size:13px;
+  color:#333;border:1px solid #C8E6C9;display:flex;align-items:center;gap:8px}
+.faq{max-width:640px;margin:40px auto;padding:0 20px}
+.faq h2{font-size:20px;font-weight:800;margin-bottom:20px;color:#1B5E20;text-align:center}
+.faq-item{background:#fff;border-radius:10px;padding:16px 20px;margin-bottom:10px;
+  box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.faq-item strong{display:block;font-size:14px;margin-bottom:6px;color:#1B5E20}
+.faq-item p{font-size:13px;color:#555;line-height:1.6}
+footer{text-align:center;padding:24px 20px;font-size:12px;color:#888;background:#f0f0eb}
+</style>
+</head>
+<body>
+
+<!-- ═══ ГЕРОЙ ═══ -->
+<div class="hero">
+  <h1>Интерактивный справочник<br>садовода Подмосковья</h1>
+  <p>150+ лучших сортов с оценками Госреестра РФ · Помощник по опылению · Агрокалендарь · Чеклист работ</p>
+  <div class="price-box">
+    <div class="old">обычная цена 1 490 ₽</div>
+    <div class="price">990 ₽</div>
+    <div class="period">полный доступ на 1 год · все обновления</div>
+  </div>
+  <br>
+  <a class="cta-btn" href="https://vk.com/podmoskovie_sad">
+    🌿 Получить доступ во ВКонтакте
+  </a>
+  <div class="sub">или в Telegram: <a href="https://t.me/PodmoskovieSadBot" style="color:#FFD54F">@PodmoskovieSadBot</a></div>
+</div>
+
+<!-- ═══ ВОЗМОЖНОСТИ ═══ -->
+<div class="features">
+  <div class="feat">
+    <div class="feat-icon">🏆</div>
+    <h3>Рейтинги только из Госреестра</h3>
+    <p>Оценки 4,8–5,0/5 из официальных данных ВНИИ СПК и Госреестра РФ. Никакой рекламы питомников.</p>
+  </div>
+  <div class="feat">
+    <div class="feat-icon">🌸</div>
+    <h3>Помощник по опылению</h3>
+    <p>11 культур. Покажет лучших опылителей для вашего сорта и предупредит о несовместимости (вишня не опыляет дюки!).</p>
+  </div>
+  <div class="feat">
+    <div class="feat-icon">📅</div>
+    <h3>Агрокалендарь с чеклистом</h3>
+    <p>Работы по месяцам, схемы обработок от болезней, напоминания. Галочки сохраняются между сессиями.</p>
+  </div>
+  <div class="feat">
+    <div class="feat-icon">📱</div>
+    <h3>Работает на телефоне</h3>
+    <p>Полная мобильная адаптация. Открывается в ВКонтакте или Telegram. Работает без интернета после загрузки.</p>
+  </div>
+  <div class="feat">
+    <div class="feat-icon">🔍</div>
+    <h3>Поиск и фильтры</h3>
+    <p>Фильтрация по сроку созревания, месту (теплица / открытый грунт), оценке, вашим сортам. Поиск по названию.</p>
+  </div>
+  <div class="feat">
+    <div class="feat-icon">🌱</div>
+    <h3>Когда ждать урожай</h3>
+    <p>Для каждой культуры: на какой год даёт плоды, какой возраст саженца брать, как сажать, что добавить в яму.</p>
+  </div>
+</div>
+
+<!-- ═══ ЧТО ВНУТРИ ═══ -->
+<div class="screenshots">
+  <h2>Что внутри справочника</h2>
+  <p>Верифицированные данные · Никаких галлюцинаций · Только Госреестр и ВНИИ</p>
+  <div class="screen-grid">
+    <div class="screen-card"><strong>🍎 Яблоня</strong>Первенец Ртищева 5,0/5 · Чудное (карлик)</div>
+    <div class="screen-card"><strong>🍐 Груша</strong>Просто Мария 4,8–5,0/5 · Чижовская 4,1/5</div>
+    <div class="screen-card"><strong>🍒 Черешня</strong>Ревна · Тютчевка 4,9/5 · Ипуть</div>
+    <div class="screen-card"><strong>🟠 Абрикос</strong>Лель 5,0/5 · Водолей 5,0/5 · Графиня</div>
+    <div class="screen-card"><strong>⚫ Смородина</strong>Селеченская 2 · Добрыня 4,9/5</div>
+    <div class="screen-card"><strong>🍓 Земляника</strong>Купчиха 5,0 (Госреестр) · Азия 4,6</div>
+    <div class="screen-card"><strong>🫐 Жимолость</strong>Бакчарский великан 4,8/5</div>
+    <div class="screen-card"><strong>🧬 Дюки</strong>Чудо-вишня · Ночка · Спартанка</div>
+    <div class="screen-card"><strong>🍅 Томаты</strong>10+ сортов для теплиц МО</div>
+    <div class="screen-card"><strong>🥒 Огурцы</strong>Маша F1 5,0 · Гуннар F1 4,9 · 11 сортов</div>
+    <div class="screen-card"><strong>🎃 Тыква</strong>12 сортов · Гитара 4,9/5</div>
+    <div class="screen-card"><strong>🍇 Виноград</strong>Кодрянка · Московский устойчивый</div>
+  </div>
+</div>
+
+<!-- ═══ ПРАЙС-ЛИСТ (для ЮKassa) ═══ -->
+<div class="pricecard" id="price">
+  <div class="pricecard-head">
+    <h2>Полный доступ на 1 год</h2>
+    <div class="p">990 ₽</div>
+    <div class="per">365 дней · все обновления включены</div>
+  </div>
+  <div class="pricecard-body">
+    <ul>
+      <li>150+ сортов с оценками Госреестра</li>
+      <li>Помощник по опылению (11 культур)</li>
+      <li>Агрокалендарь и чеклист по месяцам</li>
+      <li>Схемы обработок от болезней</li>
+      <li>Блок агротехники: посадка, уход, когда урожай</li>
+      <li>Фильтр «теплица / открытый грунт»</li>
+      <li>Обновления в течение года бесплатно</li>
+    </ul>
+  </div>
+  <a class="pricecard-btn" href="https://vk.com/podmoskovie_sad">Получить доступ →</a>
+  <div class="pricecard-note">Доступ предоставляется через ВКонтакте или Telegram после оплаты через ЮKassa</div>
+</div>
+
+<!-- ═══ ДОВЕРИЕ ═══ -->
+<div class="trust">
+  <h3>Почему можно доверять</h3>
+  <div class="trust-grid">
+    <div class="trust-item">📋 Госреестр РФ</div>
+    <div class="trust-item">🔬 ВНИИ СПК (Орёл)</div>
+    <div class="trust-item">🏛️ ВНИИ люпина (Брянск)</div>
+    <div class="trust-item">🌿 ВСТИСП (Москва)</div>
+    <div class="trust-item">✅ Самозанятый · ЮKassa · чек автоматически</div>
+    <div class="trust-item">🔄 Обновляется ежегодно</div>
+  </div>
+</div>
+
+<!-- ═══ FAQ ═══ -->
+<div class="faq">
+  <h2>Частые вопросы</h2>
+  <div class="faq-item">
+    <strong>Как получить доступ после оплаты?</strong>
+    <p>Автоматически — бот в ВКонтакте или Telegram пришлёт кнопку «Открыть справочник» сразу после оплаты.</p>
+  </div>
+  <div class="faq-item">
+    <strong>Работает ли без интернета?</strong>
+    <p>После первой загрузки — да. Справочник кэшируется и работает офлайн. Удобно на даче где нет сети.</p>
+  </div>
+  <div class="faq-item">
+    <strong>Подходит ли для других регионов?</strong>
+    <p>Частично. Справочник оптимизирован для Подмосковья (Центральный регион). Для Юга или Сибири некоторые сорта будут другими.</p>
+  </div>
+  <div class="faq-item">
+    <strong>Что если не понравится?</strong>
+    <p>Возврат в течение 7 дней без вопросов. Напишите в группу ВК — вернём деньги в тот же день.</p>
+  </div>
+  <div class="faq-item">
+    <strong>Цена: 990 ₽ — это за что именно?</strong>
+    <p>Полный доступ к интерактивному справочнику на 365 дней. Все обновления в течение года входят в стоимость. Продление — по той же цене.</p>
+  </div>
+</div>
+
+<footer>
+  © 2025 Справочник садовода Подмосковья · Самозанятый · ИНН [ваш ИНН] · Оплата через ЮKassa<br>
+  Информация основана на данных Госреестра РФ, ВНИИ СПК, ВСТИСП. Для жителей Московской области.
+</footer>
+
+</body>
+</html>
